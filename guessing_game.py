@@ -41,7 +41,6 @@ def start_game():
 
     while game_over == False:
         try:
-            #print(f"Random Number (test): {random_number}\n")  # remove later
             if show_high_score == 1:
                 print(f"\nCurrent high score: {high_score}\n")
 

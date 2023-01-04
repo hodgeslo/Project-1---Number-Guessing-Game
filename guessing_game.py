@@ -39,7 +39,7 @@ def start_game():
     high_score = 0
     show_high_score = 0
 
-    while game_over == False:
+    while not game_over:
         try:
             if show_high_score == 1:
                 print(f"\nCurrent high score: {high_score}\n")
@@ -78,9 +78,11 @@ def start_game():
                         continue
             elif player_guess < random_number:
                 print(f"Wrong guess! It's higher.\n")
+                show_high_score = 0
                 number_of_attempts += 1
             elif player_guess > random_number:
                 print(f"Wrong guess! It's lower.\n")
+                show_high_score = 0
                 number_of_attempts += 1
         except ValueError:
             print("\nOops. Please enter a number only\n")

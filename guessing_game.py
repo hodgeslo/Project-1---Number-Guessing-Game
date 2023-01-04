@@ -44,7 +44,7 @@ def start_game():
             if show_high_score == 1:
                 print(f"\nCurrent high score: {high_score}\n")
 
-            player_guess = int(input("INITIAL Guess a number between 1 and 10: "))
+            player_guess = int(input("Guess a number between 1 and 10: "))
 
             if player_guess < 1 or player_guess > 10:
                 print(f"\nOops, try again! Enter a number between 1 and 10\n")

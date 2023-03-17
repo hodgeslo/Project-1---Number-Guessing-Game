@@ -58,7 +58,7 @@ def start_game():
                     if play_again.lower() == "y":
                         game_over = False
                         random_number = random.randrange(1, 10)
-                        if high_score == 0 or high_score == 1:
+                        if high_score == 0:
                             high_score = number_of_attempts
                         elif number_of_attempts < high_score:
                             high_score = number_of_attempts
